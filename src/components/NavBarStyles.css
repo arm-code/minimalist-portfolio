@@ -1,0 +1,17 @@
+ul{
+    display: flex;    
+    justify-content: flex-end;
+    gap: 20px;    
+    padding: 20px 20px 20px 20px ;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;   
+}
+
+ul li:first-child{
+    font-weight: bold;
+}
+
+li{
+    list-style-type: none;    
+}

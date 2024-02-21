@@ -1,0 +1,26 @@
+.projectspage {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+hr{
+   background-color: black; 
+   margin-top: 10px;
+   width: 7%;
+}
+
+.cardscontainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    align-content: center;
+    
+}
