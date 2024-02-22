@@ -27,7 +27,7 @@ export const ProjectsPage = () => {
   const tech4 = [ <IoLogoJavascript />];
   
   return (
-    <div className='projectspage'>
+    <div className='projectspage' id='projectsPage'>
       <h1>PROJECTS</h1>
       <p>Some projects I have worked on</p>
       <hr />

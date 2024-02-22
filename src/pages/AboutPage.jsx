@@ -10,7 +10,7 @@ import { FaGit } from 'react-icons/fa';
 
 export const AboutPage = () => {
   return (
-    <div className='aboutpage'>
+    <div className='aboutpage' id='aboutPage'>
       <h1>ABOUT ME</h1>
       <p>Hi. I'm Alexis Romero Mendoza</p>
       <hr />

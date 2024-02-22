@@ -3,7 +3,7 @@ import './HomePageStyles.css';
 
 export const HomePage = () => {
   return (
-    <div className='homepage'>
+    <div className='homepage' id='homePage'>
       <NavBar />
       <div>
         <h1>ALEXIS ROMERO MENDOZA</h1>
