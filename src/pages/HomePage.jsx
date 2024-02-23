@@ -6,6 +6,7 @@ export const HomePage = () => {
     <div className='homepage' id='homePage'>
       <NavBar />
       <div>
+        <p>Hi. I'm</p>
         <h1>ALEXIS ROMERO MENDOZA</h1>
         <p>WEB DEVELOPER</p>
         <hr />

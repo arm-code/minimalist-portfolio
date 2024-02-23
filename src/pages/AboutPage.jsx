@@ -1,18 +1,16 @@
 import './AboutPageStyles.css';
 import arm from '../img/arm2.jpg';
-import { FaReact } from 'react-icons/fa';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3Alt } from 'react-icons/fa';
+import { FaReact, FaGit, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+
 import { DiDjango } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { TbFileTypeSql } from 'react-icons/tb';
-import { FaGit } from 'react-icons/fa';
 
 export const AboutPage = () => {
   return (
     <div className='aboutpage' id='aboutPage'>
       <h1>ABOUT ME</h1>
-      <p>Hi. I'm Alexis Romero Mendoza</p>
+      <p>What do I do</p>
       <hr />
       <div className='aboutContainer'>
         <div className='aboutItem'>
@@ -51,17 +49,16 @@ export const AboutPage = () => {
             I enjoy the programming web. I like to view how a website is building. To design every button from zero and give it color with CSS.
           </p> */}
         </div>
-        
       </div>
       <div className='iconsContainer'>
-          <FaReact />
-          <FaHtml5 />
-          <FaCss3Alt />
-          <DiDjango />
-          <IoLogoJavascript />
-          <TbFileTypeSql />
-          <FaGit />
-        </div>
+        <FaReact />
+        <FaHtml5 />
+        <FaCss3Alt />
+        <DiDjango />
+        <IoLogoJavascript />
+        <TbFileTypeSql />
+        <FaGit />
+      </div>
     </div>
   );
 };

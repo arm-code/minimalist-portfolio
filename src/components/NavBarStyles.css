@@ -1,11 +1,17 @@
 ul{
     display: flex;    
-    justify-content: flex-end;
     gap: 20px;    
-    padding: 20px 20px 20px 20px ;
     font-size: 18px;
     box-sizing: border-box;
-    width: 100%;   
+    width: 95%;
+    height: 10vh;
+    box-sizing: border-box;   
+    position: fixed;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 20px;
 }
 
 ul li:first-child{
