@@ -1,15 +1,14 @@
 {
   "name": "portafolio-minimalista",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0",  
   "type": "module",
-  "homepage": "https://arm-code.github.io/minimalist-portfolio/",
+  
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "predeploy": "yarn build",
+    "preview": "vite preview",    
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
