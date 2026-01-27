@@ -1,6 +1,6 @@
-import { CardProject } from '../components/CardProject';
+import { CardProject } from '../../components/CardProject';
 import './ProjectsPageStyles.css';
-import { projects } from '../utils/projectsInformacion';
+import { projects } from '../../utils/projectsInformacion';
 
 export const ProjectsPage = () => {
   return (

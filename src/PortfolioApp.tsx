@@ -1,9 +1,9 @@
 import { Footer } from './components/Footer';
-import { AboutPage } from './pages/AboutPage';
-import { AuthPage } from './pages/AuthPage';
-import { ContactPage } from './pages/ContactPage';
-import { HomePage } from './pages/HomePage';
-import { ProjectsPage } from './pages/ProjectsPage';
+import { AboutPage } from './pages/public/AboutPage';
+import { AuthPage } from './pages/public/AuthPage';
+import { ContactPage } from './pages/public/ContactPage';
+import { HomePage } from './pages/public/HomePage';
+import { ProjectsPage } from './pages/public/ProjectsPage';
 
 export const PortfolioApp = () => {
   return (

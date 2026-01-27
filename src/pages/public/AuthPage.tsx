@@ -1,6 +1,6 @@
 import './AuthPageStyles.css';
 import { useState, useEffect } from 'react';
-import { supabase } from '../utils/supabaseClient';
+import { supabase } from '../../utils/supabaseClient';
 import { Session } from '@supabase/supabase-js';
 
 export const AuthPage = () => {

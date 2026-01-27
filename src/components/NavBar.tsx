@@ -1,5 +1,5 @@
 import './NavBarStyles.css';
-import cv from '../files/alexis_romero_mendoza_CV_2024_ENG4.pdf';
+import cv from '../assets/files/alexis_romero_mendoza_CV_2024_ENG4.pdf';
 export const NavBar = () => {
 
   
