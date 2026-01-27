@@ -3,6 +3,9 @@ import { PublicRoute } from "./Guards";
 import { HomePage } from "../pages/public/HomePage";
 import LoginPage from "../pages/auth/LoginPage";
 import PublicLayout from "../layouts/PublicLayout";
+import { ProjectsPage } from "../pages/public/ProjectsPage";
+import { AboutPage } from "../pages/public/AboutPage";
+import { ContactPage } from "../pages/public/ContactPage";
 
 
 export const publicRoutes: RouteObject = {
@@ -12,7 +15,11 @@ export const publicRoutes: RouteObject = {
             element: <PublicLayout />,
             children: [
                 { path: "/", element: <HomePage /> },
-                { path: "/login", element: <LoginPage /> }
+                { path: "/login", element: <LoginPage /> },
+                { path: "/home-page", element: <HomePage />},
+                { path: "/projects-page", element: <ProjectsPage />},
+                { path: "/about-page", element: <HomePage />},
+                { path: "/contact-page", element: <ContactPage />}, // Placeholder for ContactPage
             ]
         }
     ]

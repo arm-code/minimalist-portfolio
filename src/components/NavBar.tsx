@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import cv from '../assets/files/alexis_romero_mendoza_CV_2024_ENG4.pdf';
 
 export const NavBar = () => {
@@ -6,12 +7,12 @@ export const NavBar = () => {
       <div className="backdrop-blur-md bg-white/80 border border-violet-200/50 rounded-full mt-4 shadow-lg shadow-violet-500/10">
         <ul className="flex items-center justify-center gap-2 md:gap-6 px-4 py-3 md:py-4">
           <li>
-            <a
-              href='#homePage'
+            <Link
+              to='/home-page'
               className="font-semibold text-sm md:text-base text-violet-900 hover:text-violet-600 transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-violet-50"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -23,28 +24,28 @@ export const NavBar = () => {
             </a>
           </li>
           <li>
-            <a
-              href='#projectsPage'
+            <Link
+              to='/projects-page'
               className="text-sm md:text-base text-violet-700 hover:text-violet-600 transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-violet-50"
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href='#aboutPage'
+            <Link
+              to='/about-page'
               className="text-sm md:text-base text-violet-700 hover:text-violet-600 transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-violet-50"
             >
               About me
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href='#contactPage'
+            <Link
+              to='/contact-page'
               className="text-sm md:text-base text-violet-700 hover:text-violet-600 transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-violet-50"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
