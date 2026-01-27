@@ -5,7 +5,7 @@ import { projects } from '../utils/projectsInformacion';
 export const ProjectsPage = () => {
   return (
     <div className='projectspage' id='projectsPage'>
-      <h1>PROJECTS</h1>
+      <h1>My Projects</h1>
       <p>Some projects I have worked on</p>
       <hr />
       <div className='cardscontainer'>
