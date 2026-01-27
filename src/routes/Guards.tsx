@@ -1,17 +1,17 @@
 
 
 import { Navigate, Outlet} from "react-router-dom";
-import { useAuthContext } from "../context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 
 
 export const PrivateRoute = () =>{
-    const { isAuthenticated } = useAuthContext();
-    return isAuthenticated ? <Outlet /> : <Navigate to="/login" replace/>;
+    const { session } = useAuth();
+    return session ? <Outlet /> : <Navigate to="/login" replace/>;
 }
 
 export const PublicRoute = () => {
-    const { isAuthenticated } = useAuthContext();
+    const { session } = useAuth();
 
     //Si ya está autenticado, redirige al dashboard
-    return !isAuthenticated ? <Outlet /> : <Navigate to="/dashboard" replace/>;
+    return !session ? <Outlet /> : <Navigate to="/dashboard" replace/>;
 }
