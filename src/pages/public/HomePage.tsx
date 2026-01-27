@@ -1,5 +1,4 @@
-import { NavBar } from '../../components/NavBar';
-import './HomePageStyles.css';
+
 
 export const HomePage = () => {
   return (

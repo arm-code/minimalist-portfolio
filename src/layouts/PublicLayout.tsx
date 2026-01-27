@@ -1,13 +1,13 @@
- import React from 'react'
+ 
 import { NavBar } from '../components/NavBar'
 import { Outlet } from 'react-router-dom'
 import { Footer } from '../components/Footer'
  
  const PublicLayout = () => {
    return (
-     <div>
+     <div className='flex w-full min-h-screen flex-col justify-between'>
         <NavBar/>
-        <main>
+        <main className='mt-30 mb-5 flex flex-col items-center text-violet-600'>
             <Outlet/>
         </main>
         <Footer/>

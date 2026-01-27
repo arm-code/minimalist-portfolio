@@ -1,4 +1,4 @@
-import './ContactPageStyles.css';
+
 import { MdOutlineMail } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';

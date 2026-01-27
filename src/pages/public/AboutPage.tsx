@@ -1,4 +1,4 @@
-import './AboutPageStyles.css';
+
 import arm from '../assets/img/arm2.jpg';
 import { FaReact, FaGit, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { SiTypescript } from "react-icons/si";
