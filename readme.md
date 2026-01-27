@@ -68,3 +68,4 @@ src/
 - **Vite** - Build tool y dev server
 - **Supabase** - Backend as a Service (autenticación)
 - **React Icons** - Iconos
+- **Tailwind CSS** - Framework de estilos

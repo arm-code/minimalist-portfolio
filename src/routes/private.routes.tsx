@@ -15,7 +15,8 @@ export const privateRoutes: RouteObject = {
             children: [
                 { path: "/dashboard", element: <DashboardPage /> },
                 { path: '/profile', element: <ProfilePage /> },
-                { path: '/settings', element: <SettingsPage /> }]
+                { path: '/settings', element: <SettingsPage /> }
+            ]
         }
     ]
 
