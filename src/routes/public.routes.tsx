@@ -2,12 +2,18 @@ import { RouteObject } from "react-router-dom";
 import { PublicRoute } from "./Guards";
 import { HomePage } from "../pages/public/HomePage";
 import LoginPage from "../pages/auth/LoginPage";
+import PublicLayout from "../layouts/PublicLayout";
 
 
 export const publicRoutes: RouteObject = {
-    element: <PublicRoute/>,
+    element: <PublicRoute />,
     children: [
-        { path: "/", element: <HomePage/> },
-        { path: "/login", element: <LoginPage/> }
+        {
+            element: <PublicLayout />,
+            children: [
+                { path: "/", element: <HomePage /> },
+                { path: "/login", element: <LoginPage /> }
+            ]
+        }
     ]
 }
