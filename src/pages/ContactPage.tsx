@@ -21,7 +21,7 @@ export const ContactPage = () => {
         </a>
         <a href='tel:+526567608407' className='contactItem'>
           <FaPhone />
-          <p>+52 6567608407</p>
+          <p>+52 6567788565</p>
         </a>
 
         <div className='otherContactItems'>

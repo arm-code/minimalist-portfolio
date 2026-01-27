@@ -23,3 +23,17 @@ hr{
     align-content: center;
     
 }
+
+@media(max-width: 549px){
+    .cardscontainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:549px){
+    .cardscontainer{
+        display: grid;
+    grid-template-columns: repeat(2, auto);
+    }
+}
