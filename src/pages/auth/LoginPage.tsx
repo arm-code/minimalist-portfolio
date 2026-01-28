@@ -1,5 +1,4 @@
-// src/pages/auth/AuthPage.tsx
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { supabase } from '../../utils/supabaseClient';
 import { useAuth } from '../../context/AuthContext';
 
@@ -11,17 +10,37 @@ const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [authError, setAuthError] = useState<string | null>(null);
 
+  const hasRun = useRef(false);
+
   // Manejar el Magic Link al montar
   useEffect(() => {
+    // 1. Verificar si hay errores en el fragmento (#) de la URL (Supabase los manda ahí en fallos)
+    const hashParams = new URLSearchParams(window.location.hash.substring(1));
+    const errorDescription = hashParams.get('error_description');
+    if (errorDescription) {
+      setAuthError(decodeURIComponent(errorDescription.replace(/\+/g, ' ')));
+      return;
+    }
+
+    // 2. Limpiar el fragmento de la URL si no hay error (estético)
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+
+    // 3. Manejar el Magic Link (token_hash)
     const params = new URLSearchParams(window.location.search);
     const token_hash = params.get('token_hash');
     const type = params.get('type');
 
-    if (token_hash) {
+    if (token_hash && !hasRun.current) {
+      hasRun.current = true;
       setLoading(true);
+
       supabase.auth.verifyOtp({ token_hash, type: (type as any) || 'email' })
         .then(({ error }) => {
-          if (error) setAuthError(error.message);
+          if (error) {
+            setAuthError(error.message);
+          }
           setLoading(false);
         });
     }
@@ -34,9 +53,9 @@ const LoginPage = () => {
 
     const { error } = await supabase.auth.signInWithOtp({
       email,
-      options: { 
+      options: {
         // Asegúrate de que esta URL esté permitida en tu Dashboard de Supabase (Authentication -> URL Configuration)
-        emailRedirectTo: window.location.origin + '/login' 
+        emailRedirectTo: window.location.origin + '/login'
       },
     });
 
@@ -53,7 +72,7 @@ const LoginPage = () => {
 
   return (
     <div className="flex min-h-lvh flex-col justify-center px-6 py-12 lg:px-8">
-      
+
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <img
           alt="Violet Flame Logo"
@@ -85,7 +104,7 @@ const LoginPage = () => {
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-violet-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 text-center"
               />
             </div>
-          </div>         
+          </div>
 
           {/* Mostrar error si existe */}
           {authError && (
@@ -104,7 +123,7 @@ const LoginPage = () => {
             </button>
           </div>
         </form>
-        
+
       </div>
     </div>
   );
