@@ -3,7 +3,7 @@ import cv from '../assets/files/alexis_romero_mendoza_CV_2024_ENG4.pdf';
 
 export const NavBar = () => {
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50">
+    <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 bg-slate-50">
       <div className="backdrop-blur-md bg-white/80 border border-violet-200/50 rounded-full mt-4 shadow-lg shadow-violet-500/10">
         <ul className="flex items-center justify-center gap-2 md:gap-6 px-4 py-3 md:py-4">
           <li>
