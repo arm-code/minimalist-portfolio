@@ -5,19 +5,19 @@ export default function Footer() {
 
     <footer className="flex flex-col items-center justify-around w-full py-16 text-sm text-violet-800/70 border-t border-violet-800/10 shadow-2xl shadow-violet-900">
       <div className="flex items-center gap-8">
-        <Link to="home-page" className="font-medium text-gray-500 hover:text-black transition-all">
+        <Link to="home-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
           Home
         </Link>
-        <Link to="about-page" className="font-medium text-gray-500 hover:text-black transition-all">
+        <Link to="about-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
           About
         </Link>
-        <Link to="contact-page" className="font-medium text-gray-500 hover:text-black transition-all">
+        <Link to="contact-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
           Contact
         </Link>
-        <Link to="projects-page" className="font-medium text-gray-500 hover:text-black transition-all">
+        <Link to="projects-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
           Projects
         </Link>
-        <Link to="login" className="font-medium text-gray-500 hover:text-black transition-all">
+        <Link to="login" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
           Login
         </Link>
       </div>

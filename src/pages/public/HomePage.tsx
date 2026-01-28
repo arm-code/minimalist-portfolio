@@ -9,13 +9,14 @@ export const HomePage = () => {
           Alexis Romero Mendoza
         </h1>
 
-        <h2 className="text-3xl font-semibold text-gray-300">
+        <h2 className="text-3xl font-semibold text-violet-300">
           <Typewriter
             options={{
               strings: ['Software Engineer', 'Fullstack Developer'],
               autoStart: true,
               loop: true,
-              deleteSpeed: 50,
+              deleteSpeed: 50,              
+              
             }}
           />
         </h2>
