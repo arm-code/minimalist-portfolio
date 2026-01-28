@@ -17,6 +17,9 @@ export default function Footer() {
         <Link to="projects-page" className="font-medium text-gray-500 hover:text-black transition-all">
           Projects
         </Link>
+        <Link to="login" className="font-medium text-gray-500 hover:text-black transition-all">
+          Login
+        </Link>
       </div>
 
       <div className="flex items-center gap-4 mt-8 ">
