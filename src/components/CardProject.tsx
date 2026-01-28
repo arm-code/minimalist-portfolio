@@ -1,7 +1,7 @@
-import './CardProjectStyles.css';
+
 import { FaGithub } from 'react-icons/fa';
 
-export const CardProject = ({ description, projectName, linkTo, techs }) => {
+export const CardProject = ({ description, projectName, linkTo, techs }: any) => {
   return (
     <div className='cardproject'>
       <div className='cardInner'>
@@ -10,7 +10,7 @@ export const CardProject = ({ description, projectName, linkTo, techs }) => {
         <p>{description}</p>
 
         <div className='tech'>
-          {techs.map((t, i) => (
+          {techs.map((t: number, i: number) => (
             <div key={i}>{t}</div>
           ))}
         </div>
