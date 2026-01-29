@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import cv from '../assets/files/alexis_romero_mendoza_CV_2024_ENG4.pdf';
+import cv from '../assets/files/alexis_romero_mendoza_CV_2026.pdf';
 
 export const NavBar = () => {
   return (
