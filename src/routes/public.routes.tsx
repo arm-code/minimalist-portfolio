@@ -18,7 +18,7 @@ export const publicRoutes: RouteObject = {
                 { path: "/login", element: <LoginPage /> },
                 { path: "/home-page", element: <HomePage />},
                 { path: "/projects-page", element: <ProjectsPage />},
-                { path: "/about-page", element: <HomePage />},
+                { path: "/about-page", element: <AboutPage />},
                 { path: "/contact-page", element: <ContactPage />}, // Placeholder for ContactPage
             ]
         }
