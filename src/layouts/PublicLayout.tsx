@@ -7,7 +7,7 @@ import  Footer  from '../components/Footer'
    return (
      <div className='flex w-full min-h-screen flex-col justify-between bg-slate-50'>
         <NavBar/>
-        <main className=' mb-5 flex flex-col items-center text-violet-600'>
+        <main className='mt-30 flex flex-col items-center text-violet-600'>
             <Outlet/>
         </main>
         <Footer/>
