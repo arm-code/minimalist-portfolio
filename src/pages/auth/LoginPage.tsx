@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { supabase } from '../../utils/supabaseClient';
 import { useAuth } from '../../context/AuthContext';
 
-import violetLogo from '../../assets/logos/arm_solutions_logo_square.png';
+import violetLogo from '../../assets/logos/square-image-2.png';
 
 const LoginPage = () => {
   const { session } = useAuth();
@@ -51,11 +51,13 @@ const LoginPage = () => {
     setLoading(true);
     setAuthError(null); // Limpiar errores previos
 
+    const redirectUrl = import.meta.env.VITE_SITE_URL || window.location.origin;
+
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
         // Asegúrate de que esta URL esté permitida en tu Dashboard de Supabase (Authentication -> URL Configuration)
-        emailRedirectTo: window.location.origin + '/login'
+        emailRedirectTo: redirectUrl
       },
     });
 
@@ -77,7 +79,7 @@ const LoginPage = () => {
         <img
           alt="Violet Flame Logo"
           src={violetLogo}
-          className="mx-auto h-30 w-auto"
+          className="mx-auto h-30 w-auto bg-transparent"
         />
         <h2 className="mt-10 text-center text-2xl/9 font-bold">
           Restricted Access - Login
