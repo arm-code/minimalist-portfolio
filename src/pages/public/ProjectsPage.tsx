@@ -1,14 +1,12 @@
-import { CardProject } from '../components/CardProject';
-import './ProjectsPageStyles.css';
-import { projects } from '../utils/projectsInformacion';
+import { CardProject } from '../../components/CardProject';
+import { projects } from '../../utils/projectsInformacion';
 
 export const ProjectsPage = () => {
   return (
-    <div className='projectspage' id='projectsPage'>
-      <h1>My Projects</h1>
-      <p>Some projects I have worked on</p>
+    <div className='flex flex-col items-center gap-2 m-5' id='projectsPage'>      
+      <h2 className='text-2xl font-black'>Some projects I have worked on</h2>
       <hr />
-      <div className='cardscontainer'>
+      <div className='flex gap-5 flex-wrap min-w-lvh justify-center'>
         {projects.map((project, index) => (
           <CardProject
             key={index}

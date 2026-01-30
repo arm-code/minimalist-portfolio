@@ -1,34 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import "tailwindcss";
 
-:root{
-    --blue-black: #304f6d;
-    --green-med: #899481;
-    --orange-med: #e07d54;
-    --yellow-med: #ffe1a0;
-    --blue-low: #e2f3fd;
-    --gray-low: #e6e1dd;
-}
+/* a:visited {
+  color: inherit;
+} */
 
-*{
-    font-family: 'Fira Code', monospace;
-    margin: 0;
-}
-
-body{
-    background-color: var(--blue-black);           
+* {
+    font-family: "Geist", sans-serif;    
+    /* background-color: #becbd6; */
+    /* color: #9C27B0; */
 }
 
 
-#root{
-    display: flex;
-    justify-content: center;       
-}
-
-.portfolio-container{
-    width: 95%;
-    background-color: var(--blue-black);
-    display: flex;        
-    flex-direction: column;
-    box-sizing: border-box;
-}
+/* .geist-normal {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */

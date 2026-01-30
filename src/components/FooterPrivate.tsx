@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function FooterPrivate() {
   return (
 
     <footer className="flex flex-col items-center justify-around w-full py-16 text-sm text-violet-800/70 border-t border-violet-800/10 shadow-2xl shadow-violet-900">
