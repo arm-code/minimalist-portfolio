@@ -4,20 +4,20 @@ export default function Footer() {
   return (
 
     <footer className="flex flex-col items-center justify-around w-full py-16 text-sm text-violet-800/70 border-t border-violet-800/10 shadow-2xl shadow-violet-900">
-      <div className="flex items-center gap-8">
-        <Link to="home-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
+      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 px-6">
+        <Link to="home-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all px-2 py-1">
           Home
         </Link>
-        <Link to="about-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
+        <Link to="about-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all px-2 py-1">
           About
         </Link>
-        <Link to="contact-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
+        <Link to="contact-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all px-2 py-1">
           Contact
         </Link>
-        <Link to="projects-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
+        <Link to="projects-page" className="font-medium text-violet-500 hover:text-violet-600 transition-all px-2 py-1">
           Projects
         </Link>
-        <Link to="login" className="font-medium text-violet-500 hover:text-violet-600 transition-all">
+        <Link to="login" className="font-medium text-violet-500 hover:text-violet-600 transition-all px-2 py-1">
           Login
         </Link>
       </div>

@@ -10,35 +10,35 @@ export const ContactPage = () => {
         <p className="text-violet-600 font-semibold text-lg tracking-wide">I'm open to work.</p>
       </div>
 
-      <div className='w-full max-w-xl space-y-4'>
+      <div className='w-full max-w-xl space-y-4 px-2'>
         <a
           href='mailto:alexis.rm162917@gmail.com'
-          className='flex items-center gap-4 p-5 rounded-2xl border border-violet-100 bg-white hover:bg-violet-50 hover:border-violet-200 transition-all shadow-sm group'
+          className='flex items-center gap-3 md:gap-4 p-4 md:p-5 rounded-2xl border border-violet-100 bg-white hover:bg-violet-50 hover:border-violet-200 transition-all shadow-sm group'
         >
-          <div className="p-3 rounded-xl bg-violet-100 text-violet-600 group-hover:scale-110 transition-transform">
-            <MdOutlineMail className="text-2xl" />
+          <div className="p-2.5 md:p-3 rounded-xl bg-violet-100 text-violet-600 group-hover:scale-110 transition-transform flex-shrink-0">
+            <MdOutlineMail className="text-xl md:text-2xl" />
           </div>
-          <span className="text-lg font-medium tracking-tight text-violet-700">alexis.rm162917@gmail.com</span>
+          <span className="text-sm md:text-lg font-medium tracking-tight text-violet-700 truncate">alexis.rm162917@gmail.com</span>
         </a>
 
         <a
           href='mailto:al162917@alumnos.uacj.mx'
-          className='flex items-center gap-4 p-5 rounded-2xl border border-violet-100 bg-white hover:bg-violet-50 hover:border-violet-200 transition-all shadow-sm group'
+          className='flex items-center gap-3 md:gap-4 p-4 md:p-5 rounded-2xl border border-violet-100 bg-white hover:bg-violet-50 hover:border-violet-200 transition-all shadow-sm group'
         >
-          <div className="p-3 rounded-xl bg-violet-100 text-violet-600 group-hover:scale-110 transition-transform">
-            <MdOutlineMail className="text-2xl" />
+          <div className="p-2.5 md:p-3 rounded-xl bg-violet-100 text-violet-600 group-hover:scale-110 transition-transform flex-shrink-0">
+            <MdOutlineMail className="text-xl md:text-2xl" />
           </div>
-          <span className="text-lg font-medium tracking-tight text-violet-700">al162917@alumnos.uacj.mx</span>
+          <span className="text-sm md:text-lg font-medium tracking-tight text-violet-700 truncate">al162917@alumnos.uacj.mx</span>
         </a>
 
         <a
           href='tel:+526567608407'
-          className='flex items-center gap-4 p-5 rounded-2xl border border-violet-100 bg-white hover:bg-violet-50 hover:border-violet-200 transition-all shadow-sm group'
+          className='flex items-center gap-3 md:gap-4 p-4 md:p-5 rounded-2xl border border-violet-100 bg-white hover:bg-violet-50 hover:border-violet-200 transition-all shadow-sm group'
         >
-          <div className="p-3 rounded-xl bg-violet-100 text-violet-600 group-hover:scale-110 transition-transform">
-            <FaPhone className="text-xl" />
+          <div className="p-2.5 md:p-3 rounded-xl bg-violet-100 text-violet-600 group-hover:scale-110 transition-transform flex-shrink-0">
+            <FaPhone className="text-lg md:text-xl" />
           </div>
-          <span className="text-lg font-medium tracking-tight text-violet-700">+52 656 778 8565</span>
+          <span className="text-sm md:text-lg font-medium tracking-tight text-violet-700">+52 656 778 8565</span>
         </a>
       </div>
 

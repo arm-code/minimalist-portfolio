@@ -3,10 +3,10 @@ import { projects } from '../../utils/projectsInformacion';
 
 export const ProjectsPage = () => {
   return (
-    <div className='flex flex-col items-center gap-2 m-5' id='projectsPage'>      
-      <h2 className='text-2xl font-black'>Some projects I have worked on</h2>
-      <hr />
-      <div className='flex gap-5 flex-wrap min-w-lvh justify-center'>
+    <div className='flex flex-col items-center gap-6 px-4 py-12 min-h-svh' id='projectsPage'>
+      <h2 className='text-3xl md:text-5xl font-black text-center text-violet-900 uppercase'>Projects</h2>
+
+      <div className='flex gap-6 flex-wrap justify-center w-full max-w-7xl'>
         {projects.map((project, index) => (
           <CardProject
             key={index}
